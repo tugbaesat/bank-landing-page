@@ -161,7 +161,7 @@ p {
 }
 
 .easybank {
-  background-color: var(--clr-neutral-400);
+  background-color: var(--clr-neutral-300);
   height: 90vh;
   padding: 5rem 4rem;
   display: flex;
@@ -175,6 +175,41 @@ p {
 .easybank-cards {
   display: flex;
   gap: 4rem;
+}
+
+.articles {
+  background-color: var(--clr-neutral-200);
+  height: 90vh;
+  padding: 5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.articles-cards {
+  display: flex;
+  gap: 4rem;
+}
+.articles-card {
+  background-color: var(--clr-neutral-100);
+  border-radius: 2.5%;
+}
+.articles-card img {
+  width: 300px;
+  height: 200px;
+  border-top-right-radius: 2.5%;
+  border-top-left-radius: 2.5%;
+}
+.articles-text {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+}
+.articles-text h5 {
+  color: var(--clr-neutral-500);
+  font-size: 0.75rem;
 }
 
 .attribution {
@@ -247,12 +282,14 @@ p {
   }
   .mockup-image {
     width: 100%;
-    background-size: 100%;
-    background-position-x: 120px;
-    background-position-y: 30px;
+    background-size: 150%;
+    background-position-x: -70px;
+    background-position-y: -90px;
   }
   .mockup-image img {
     width: 100%;
+    transform: translate(0px, -100px);
+
   }
 
   .easybank {
@@ -268,11 +305,17 @@ p {
     display: flex;
     flex-direction: column;
   }
-  .card {
+  .easybank-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2rem;
   }
+  
+  .articles-cards {
+    display: flex;
+    flex-direction: column;
+  }
+  
 }
