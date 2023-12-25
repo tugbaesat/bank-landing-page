@@ -211,6 +211,9 @@ p {
   color: var(--clr-neutral-500);
   font-size: 0.75rem;
 }
+.articles-text h3:hover {
+color: var(--clr-primary-green);
+}
 
 footer {
   display: flex;
@@ -235,8 +238,11 @@ footer {
   flex-direction: column;
   color: var(--clr-neutral-300);
   cursor: pointer;
-  padding: 4rem;
   font-size: 1rem;
+}
+.footer-menu-items{
+  display: flex;
+  padding: 2rem 0;
 }
 .footer-item {
   padding: 0.1rem;
